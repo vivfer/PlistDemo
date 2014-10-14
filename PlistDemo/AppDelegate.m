@@ -17,6 +17,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    //读取
+    NSString*plistpath  = [[NSBundle mainBundle] pathForResource:@"plistDemo" ofType:@"plist"];
+    
+    NSMutableDictionary*data = [[NSMutableDictionary alloc] initWithContentsOfFile:plistpath];
+    NSLog(@"data : %@",data);
+    
+    //添加
+    [data setObject:@"add some content" forKey:@"add_key"];
+    
+    //获取doucuments目录
+    NSArray *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *plistpath1 = [path objectAtIndex:0];
+    NSLog(@"plistpath1 : %@",plistpath1);
+    
+    
+    //完整文件名
+    NSString *fileName = [plistpath1 stringByAppendingPathComponent:@"test.plist"];
+    //写入
+    [data writeToFile:fileName atomically:YES];
+    
+    NSMutableDictionary*data1 = [[NSMutableDictionary alloc] initWithContentsOfFile:fileName];
+    NSLog(@"data1 : %@",data1);
+    
+    
+    
+    
+    
+    
+    
+    
     return YES;
 }
 

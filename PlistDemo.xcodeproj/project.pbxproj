@@ -15,6 +15,7 @@
 		BF71E8DC19DE6FB1001A891B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF71E8DB19DE6FB1001A891B /* Images.xcassets */; };
 		BF71E8DF19DE6FB1001A891B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF71E8DD19DE6FB1001A891B /* LaunchScreen.xib */; };
 		BF71E8EB19DE6FB1001A891B /* PlistDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF71E8EA19DE6FB1001A891B /* PlistDemoTests.m */; };
+		BF71E8F519DE705A001A891B /* plistDemo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF71E8F419DE705A001A891B /* plistDemo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		BF71E8E419DE6FB1001A891B /* PlistDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlistDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF71E8E919DE6FB1001A891B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF71E8EA19DE6FB1001A891B /* PlistDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlistDemoTests.m; sourceTree = "<group>"; };
+		BF71E8F419DE705A001A891B /* plistDemo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = plistDemo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				BF71E8CF19DE6FB1001A891B /* AppDelegate.h */,
 				BF71E8D019DE6FB1001A891B /* AppDelegate.m */,
+				BF71E8F419DE705A001A891B /* plistDemo.plist */,
 				BF71E8D519DE6FB1001A891B /* ViewController.h */,
 				BF71E8D619DE6FB1001A891B /* ViewController.m */,
 				BF71E8D819DE6FB1001A891B /* Main.storyboard */,
@@ -204,6 +207,7 @@
 			files = (
 				BF71E8DA19DE6FB1001A891B /* Main.storyboard in Resources */,
 				BF71E8DF19DE6FB1001A891B /* LaunchScreen.xib in Resources */,
+				BF71E8F519DE705A001A891B /* plistDemo.plist in Resources */,
 				BF71E8DC19DE6FB1001A891B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
